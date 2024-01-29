@@ -143,7 +143,7 @@ class AccountServiceTest {
     assertEquals(account.getBalance(), accountDto.getBalance());
     assertEquals(account.getAccountNumber(),accountDto.getAccountNumber());
     assertEquals(account.getOpenedAt(),accountDto.getOpenedAt());
-    assertTrue(accountDto.getClosedAt() != null);
+    assertTrue(accountDto.getClosedAt() == null);
   }
 
   @Test
